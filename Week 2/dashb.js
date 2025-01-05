@@ -86,7 +86,11 @@ document.getElementById('categoryDropdown').addEventListener('change', (event) =
 document.getElementById('searchBar').addEventListener('input', (event) => {
     const searchWord = event.target.value.toLowerCase();
     const filteredProducts = products.filter(product => {
-        return product.title.toLowerCase().includes(searchTerm) || product.brand.toLowerCase().includes(searchTerm) || product.description.toLowerCase().includes(searchTerm) || product.category.toLowerCase().includes(searchTerm);
+        return product.category.toLowerCase().includes(searchWord) ||
+        product.title.toLowerCase().includes(searchWord)
+        // product.description.toLowerCase().includes(searchWord) || 
+        // product.category.toLowerCase().includes(searchWord);
     });
     displayProducts(filteredProducts);
 })
+

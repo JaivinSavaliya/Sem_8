@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -11,21 +12,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div class="mainBody">
+        
+        <input type="checkbox" id="sidebarToggle" class="sidebarCheckbox">
+        <label for="sidebarToggle" class="sidebarToggleLabel">☰</label>
+
+        
+        <nav class="sidebar">
+            <ul>
+                <li><input type="search" placeholder="Search Products.." id="searchBarSidebar"></li>
+                <li>
+                    <select id="categoryDropdownSidebar">
+                        <option value="">All</option>
+                    </select>
+                </li>
+                <li id="logoutListSidebar">Logout</li>
+            </ul>
+        </nav>
+
+        
         <nav class="navbarContainer">
             <div class="NavImage">
                 <img class="companyLogo" src="./TBZ logo.png" alt="No image" width="120px">
             </div>
             <div class="NavList">
                 <ul class="list">
-                    <!-- <li>Home</li> -->
-                    <!-- <li>About</li> -->
-                    <li><input type="search" placeholder=" Search Products.." id="searchBar"></li>
+                    <li><input type="search" placeholder="Search Products.." id="searchBar"></li>
                     <li>
                         <select id="categoryDropdown">
                             <option value="">All</option>
@@ -35,10 +52,13 @@
                 </ul>
             </div>
         </nav>
+
+        
         <div class="masterCard" id="masterCard">
-            <!-- cards, but need to be dynamic -->
-            <!-- ex. Card 1 -->
-            <!-- <div class="containerCard" id="containerCard">
+            
+             
+            
+            
                 <div class="wrapperCard" id="wrapperCard">
                     <img class="card-image" src="./brooke-lark-oaz0raysASk-unsplash.jpg" alt="No image">
                     <h1 id="title-card"> Buy Product </h1>
@@ -49,7 +69,7 @@
                     <button class="btn-details" id="btn-details">DETAILS</button>
                     <button class="btn-buy" id="btn-buy">BUY NOW</button>
                 </div>
-            </div> -->
+            </div> 
         </div>
     </div>
 
